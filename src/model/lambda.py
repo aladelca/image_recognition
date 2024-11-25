@@ -3,8 +3,8 @@ import json
 from utils import preprocess_image
 import numpy as np
 from PIL import Image
-from neural_network import ImageRecognition
-from utils import equivalences
+from model.neural_network import ImageRecognition
+from model.utils import equivalences
 import boto3
 import torch
 
