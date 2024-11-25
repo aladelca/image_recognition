@@ -29,5 +29,5 @@ jobs:
           docker build -t $REGISTRY/$REPOSITORY:$IMAGE_TAG -f Dockerfile .
           docker push $REGISTRY/$REPOSITORY:$IMAGE_TAG
           aws lambda update-function-code \
-            --function-name predict_iphone \
+            --function-name image_recognition \
             --image-uri $REGISTRY/$REPOSITORY:$IMAGE_TAG
